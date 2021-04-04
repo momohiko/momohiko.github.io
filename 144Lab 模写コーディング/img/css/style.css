@@ -1,0 +1,438 @@
+/* header */
+
+header {
+  background-color: #F2F3F7;
+  top: -176px;
+  left: 150px;
+  width: 100%;
+  height: 799px;
+}
+
+#header-logo {
+  top: 80px;
+  left: 187px;
+  width: 168px;
+  height: 60px;
+  padding-top: 21px;
+  display: block;
+}
+
+.test {
+  height: 999px;
+  background: transparent url("../img/メインビジュアル.png") no-repeat padding-box;
+  background-position: center;
+  z-index: 1;
+  width: 980px;
+  position: absolute;
+  top: -176px;
+  left: 150px;
+}
+
+.menu-bar {
+  top: 59px;
+  width: 975px;
+  height: 77px;
+  box-shadow: 4px 4px 1px #00000029;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  z-index: 2;
+  position: absolute;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+}
+
+#menu {
+  list-style:none;
+  display:flex;
+  }
+
+#menu li{
+  text-align: center;
+  display: flex;
+  padding-right: 40px;
+  padding-left: 40px;
+  letter-spacing: 0px;
+  position: relative;
+  }
+
+#menu a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#menu a:hover {
+  opacity: 0.6;
+}
+
+#menu li:not(:first-child)::before{
+  content: "|";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+  
+  #menu .menu-item1::after {
+    display:block;
+    font-size:0.7em;
+    color: #777777;
+    text-align: center;
+    content: "企業情報";
+  }
+
+  #menu .menu-item2::after {
+    display:block;
+    font-size:0.7em;
+    color: #777777;
+    text-align: center;
+    content: "ニュース";
+  }
+
+  #menu .menu-item3::after {
+    display:block;
+    font-size:0.7em;
+    color: #777777;
+    text-align: center;
+    content: "サービス＆製品情報";
+  }
+
+  #menu .menu-item4::after {
+    display:block;
+    font-size:0.7em;
+    color: #777777;
+    text-align: center;
+    content: "お問い合わせ";
+  }
+
+
+  /* main */
+  h2 {
+    font-size: 50px;
+    font-size: 43px;
+    font-weight: normal;
+    padding-left: 30px;
+    display: inline-block;
+    position: absolute;
+    left: 130px;
+    z-index: 2;
+  }
+
+  h2::before {
+    content: "！";
+    color: red;
+    font-size: 70px;
+    position: absolute;
+    top: -10px;
+    left: -30px;
+  }
+
+
+  /* about */
+
+  .about {
+    background-color: #F2F3F7;
+    height: 280px;
+    width: 75%;
+    position: relative;
+    top: 65px;
+    z-index: 1;
+    margin: 3% auto;
+  }
+
+  .about p {
+    background-position: center;
+    line-height: 40px;
+    position: relative;
+    top: 60px;
+    padding: 0 60px;
+    width: 999px;
+  }
+
+  .about-btn {
+    position: relative;
+    top: 100px;
+    width: 20%;
+  }
+  
+
+  /* service&product */
+  
+  .service-block {
+    position: relative;
+    top: 150px;
+  }
+
+  .service {
+    margin: 3% auto;
+    position: relative;
+    top: 170px;
+    width: 1024px;
+  }
+
+  #service-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service-img {
+    border: solid 1px #333;
+    padding: 70px 90px;
+    margin-bottom: 70px;
+  }
+  
+  .service-item {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }
+
+  .service-name {
+    color: #D4004E;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    line-height: 40px;
+    margin: auto;
+  }
+  
+  .service-heading1 {
+    position: relative;
+    left: -50px;
+  }
+  
+  .service-heading2 {
+    position: relative;
+    left: -15px;
+  }
+  
+  .service-heading3 {
+    position: relative;
+    left: -120px;
+  }
+  
+  .service-heading4 {
+    position: relative;
+    left: -120px;
+  }
+
+  .service-text {
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 2;
+    width: 350px;
+    margin: 0 70px;
+    line-height: 30px;
+    position: relative;
+    top: -10px;
+  }
+  
+  .service-btn {
+    width: 30%;
+  }
+
+  .iot-img {
+    position: relative;
+    top: -150px;
+    left: 240px; 
+  }
+
+
+
+  /* news */
+
+  .news-block {
+    position: relative;
+    top: 350px;
+ }
+
+  .news {
+    padding-bottom: 80px;
+    margin: 3% auto;
+    position: relative;
+    top: 65px;
+  }
+  
+  .news-link {
+    display: flex;
+    background-color: #F2F3F7;
+    margin-bottom: 10px;
+    padding: 30px 0px;
+    text-decoration: none;
+    margin-left: 110px;
+    margin-right: 110px;
+    font-size: 0.65rem;
+  }
+
+  .news-link:hover {
+    opacity: 0.8;
+  }
+
+  .news-box li {
+    list-style: none;
+  }
+  
+  .news-title {
+    margin: 0 20px;
+    padding: 10px 20px;
+    display: flex;
+  }
+  
+  #news-title1 {
+    color: orange;
+    border: solid 1px orange;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #news-title2 {
+    color: red;
+    border: solid 1px red;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #news-title3 {
+    color: skyblue;
+    border: solid 1px skyblue;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #news-title4 {
+    color: lightgreen;
+    border: solid 1px lightgreen;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .news-date::after {
+    content: "｜";
+    padding: 0 20px;
+  }
+  
+  .news-text::after {
+    content: "　≻";
+  }
+  
+
+  /* link-btn */
+
+  .link-btn {
+    display: flex;
+    justify-content: center;
+    background-color: #D4004E;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px 0px;
+  }
+  
+  .link-btn a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  
+  .link-btn a::after {
+    content: "　>";
+  }
+  
+  .link-btn :hover {
+    opacity: 0.8;
+  }
+
+
+  /* footer */
+
+  .footer {
+    background-color: #333333;
+    color: #ffffff;
+    position: relative;
+    top: 440px;
+  }
+  
+  .footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    opacity: 0.6;
+  }
+  
+  .footer-box {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #footer-list {
+    display: flex;
+    font-size: 0.6rem;
+    margin-top: 30px;
+  }
+  
+  #footer-list li:not(:first-child)::before{
+    content: "|";
+    left: 0px;
+    margin: 25px;
+    font-weight: bold;
+  }
+  
+  #footer-menu {
+    text-align: center;
+  }
+  
+  .sns {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sns-text {
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+    font-size: 0.6rem;
+    font-weight: bold;
+  }
+
+  .sns-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sns-list i {
+    margin-right:5px;
+  }
+
+  .sns-list li {
+    list-style: none;
+    margin: 0 5px;
+  }
+
+  .sns-box {
+    position: relative;
+    left: -20px;
+  }
+  
+  .footer-btn a {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+  
+  .footer-btn a::after {
+    content: "　>";
+  }
+  
+  .copy {
+    font-size: 0.5rem;
+    font-weight: bold;
+    padding: 40px 0;
+  }
